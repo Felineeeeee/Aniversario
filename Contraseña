@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Web de Aniversario</title>
+  <script>
+    function checkPassword() {
+      var password = document.getElementById("password").value;
+      if(password === "Te quiero") {
+        document.getElementById("content").style.display = "block";
+        document.getElementById("passwordForm").style.display = "none";
+      } else {
+        alert("Contraseña incorrecta, intente de nuevo.");
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="passwordForm">
+    <input type="password" id="password" placeholder="Ingresa la contraseña" />
+    <button onclick="checkPassword()">Ingresar</button>
+  </div>
+  <div id="content" style="display: none;">
+    <h1>Feliz Aniversario</h1>
+    <p>Contenido especial para el aniversario.</p>
+  </div>
+</body>
+</html>
